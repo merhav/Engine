@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="GUI"
+            prefHeight="400.0" prefWidth="600.0">
+    <AnchorPane maxHeight="500.0" maxWidth="800.0" minHeight="500.0" minWidth="500.0" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+
+            <Label ellipsisString="" layoutX="19.0" layoutY="-20.0" prefHeight="118.0" prefWidth="434.0" text="Search Engine" textFill="BLACK" textOverrun="CLIP" wrapText="true">
+                <font>
+                    <Font size="66.0" />
+                </font>
+                <effect>
+                    <Glow level="0.8" />
+                </effect>
+            </Label>
+            <Button fx:id="Browsew" layoutX="337.0" layoutY="101.0" mnemonicParsing="false" onAction="#Browse_working" text="Browse" />
+            <Button fx:id="Browse_s" layoutX="337.0" layoutY="160.0" mnemonicParsing="false" onAction="#Browse_saving" text="Browse" />
+
+            <TextField fx:id="work_path" layoutX="14.0" layoutY="101.0" prefHeight="25.0" prefWidth="318.0" promptText="Enter path to working direct" text="" />
+            <TextField fx:id="save_path" layoutX="14.0" layoutY="160.0" prefHeight="25.0" prefWidth="318.0" promptText="Enter saveing path for posting" text="" />
+
+            <CheckBox fx:id="stemming_option" layoutX="14.0" layoutY="206.0" mnemonicParsing="false" onAction="#checkBox_stemmimg" text="Stemmimg" />
+            <CheckBox fx:id="semantic_option" layoutX="130.0" layoutY="206.0" mnemonicParsing="false" onAction="#checkBox_semantics" text="Semantics" />
+
+            <Button fx:id="showdic_b" layoutX="14.0" layoutY="345.0" mnemonicParsing="false" onAction="#show_dic" prefHeight="43.0" prefWidth="111.0" text="Show Dictonary" />
+            <Button fx:id="loadb" layoutX="155.0" layoutY="345.0" mnemonicParsing="false" onAction="#load_dic" prefHeight="43.0" prefWidth="111.0" text="Load Dictonary" />
+            <Label layoutX="17.0" layoutY="80.0" text="Working path" />
+            <Label layoutX="17.0" layoutY="137.0" text="Save path" />
+            <Button fx:id="Browse_Q" layoutX="336.0" layoutY="295.0" mnemonicParsing="false" onAction="#Browse_query" text="Browse" />
+            <TextField fx:id="query_text" layoutX="12.0" layoutY="251.0" prefHeight="25.0" prefWidth="318.0" promptText="Enter Query Text" />
+            <TextField fx:id="query_path" layoutX="12.0" layoutY="295.0" prefHeight="25.0" prefWidth="318.0" promptText="Enter saveing path for query" />
+
+            <Button fx:id="parseb" layoutX="15.0" layoutY="414.0" mnemonicParsing="false" onAction="#parse" prefHeight="56.0" prefWidth="121.0" text="Parse">
+                <font>
+                    <Font size="26.0" />
+                </font>
+            </Button>
+            <Button fx:id="resetb" layoutX="154.0" layoutY="414.0" mnemonicParsing="false" onAction="#reset" text="Reset Button">
+                <font>
+                    <Font size="26.0" />
+                </font>
+            </Button>
+
+            <Button fx:id="run_query" layoutX="336.0" layoutY="251.0" mnemonicParsing="false" onAction="#run_query" text="Run Query" />
+            <Button fx:id="run_query_file" layoutX="401.0" layoutY="295.0" mnemonicParsing="false" onAction="#run_query_file" text="Run Query File" />
+            <Button fx:id="showQR" layoutX="364.0" layoutY="418.0" mnemonicParsing="false" onAction="#query_results" prefHeight="43.0" prefWidth="121.0" text="Show Query Result" />
+            <Button fx:id="showQtxt" layoutX="364.0" layoutY="340.0" mnemonicParsing="false" onAction="#show_q" prefHeight="43.0" prefWidth="121.0" text="Show Result" />
+        </children>
+    </AnchorPane>
+</AnchorPane>
